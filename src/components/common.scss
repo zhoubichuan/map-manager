@@ -1,0 +1,80 @@
+// 滚动条样式
+@mixin scrollbar($background: rgba(58, 148, 254, 0.3), $border-radius: 4px, $width: 6px, $height: 60px) {
+  &::-webkit-scrollbar {
+    // 滚动条整体部分，其中的属性有width,height,background,border（就和一个块级元素一样）等。
+    width: $width !important;
+    height: $height;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: $background;
+    border: none;
+
+    // 滚动条里面可以拖动的那部分
+    border-radius: $border-radius;
+  }
+
+  // &::-webkit-scrollbar-track-piece {
+  //     // 内层轨道，滚动条中间部分（一般不用）
+  //     background: transparent;
+  //     width: 30px !important;
+  // }
+  // &::-webkit-scrollbar-track {
+  //     // 外层轨道。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+  //     // background: #ff66d5;
+  //     width: 20px !important;
+  //     height: 20px;
+  // }
+  // &::-webkit-scrollbar-button {
+  //     // 滚动条两端的按钮。可以用display:none让其不显示，也可以添加背景图片，颜色改变显示效果。
+  //     // background-color: #ff7677;
+  // }
+  // &::-webkit-scrollbar-corner {
+  //     // 边角样式（一般不用）
+  //     background: #82afff;
+  // }
+  // &::-webkit-resizer {
+  //     // 定义右下角拖动块的样式（一般不用）
+  //     background: #ff0bee;
+  // }
+}
+
+@mixin content-middle() {
+  //  子元素为行内块元素+vertical-align: middle就能上下居中
+  font-size: 0;
+
+  &::before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    content: '';
+  }
+}
+
+@mixin ellipsis($rowCount: 1) {
+  @if $rowCount <= 1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    display: -webkit-box;
+    -webkit-line-clamp: $rowCount;
+    -webkit-box-orient: vertical;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: normal;
+  }
+}
+
+@mixin world-line-break() {
+  text-align: justify;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+  line-break: anywhere;
+}

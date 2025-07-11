@@ -1,0 +1,101 @@
+:root {
+  --web-color-default: #f9f9f9;
+  --web-color-primary: #2fb755;
+  --web-color-success: #2fb755;
+  --web-color-info: #cccccc;
+  --web-color-warning: #f5cd4a;
+  --web-color-danger: #f64c4c;
+  --web-color-disabled: #f2f2f2;
+
+  --web-color-border: #2fb755;
+
+  --web-color-text-default: #606266;
+  --web-color-text-disabled: #a5a5a5;
+
+  --web-color-white: white;
+  --web-color-text-primary: #1d1d1f;
+  --web-color-placeholder: #9c9c9c;
+  --web-color-placeholder-bg: #f2f2f2;
+
+  --web-color-cancel-btn-text: #666666;
+  --web-color-cancel-btn-bg: #f5f5f5;
+
+  --web-color-ccc: #cccccc;
+  --web-color-86868b: #86868b;
+  --web-color-f2f2f2: #f2f2f2;
+  --web-color-f9f9f9: #f9f9f9;
+}
+
+:root {
+  --web-button-large-height: 40px;
+  --web-button-large-padding: 10px 16px;
+  --web-button-default-height: 36px;
+  --web-button-default-padding: 8px 16px;
+  --web-button-small-height: 28px;
+  --web-button-small-padding: 5px 16px;
+
+  --web-dialog-header-padding: 24px 32px;
+  --web-dialog-footer-padding: 32px;
+  --web-dialog-footer-button-space: 19px;
+
+  --web-select-width-default: 100%;
+  --web-select-border-color-default: var(--web-color-ccc);
+  --web-select-border-color-hover: var(--web-color-86868b);
+  --web-select-bg-color-disabled: var(--web-color-f2f2f2);
+  --web-select-input-height: 36px;
+
+  --web-switch-width-default: 46px;
+  --web-switch-height-default: 24px;
+  --web-switch-border-radius-default: 16px;
+  --web-switch-circle-width-default: 20px;
+  --web-switch-circle-height-default: 20px;
+  --web-switch-text-size-default: 14px;
+
+  --web-switch-width-large: 56px;
+  --web-switch-height-large: 29px;
+  --web-switch-border-radius-large: 16px;
+  --web-switch-circle-width-large: 24px;
+  --web-switch-circle-height-large: 24px;
+  --web-switch-text-size-large: 16px;
+
+  --web-steps-bg-color: var(--web-color-white);
+  --web-steps-icon-width: 24px;
+  --web-steps-icon-height: 24px;
+
+  --web-alert-height: 36px;
+
+  --web-tabs-after-width: 32px;
+  --web-tabs-after-height: 4px;
+  --web-tabs-after-border-radius: 2px;
+
+  --web-message-height: 36px;
+
+  --web-message-box-padding-bottom: 0;
+  --web-message-box-header-height: 72px;
+  --web-message-box-header-padding: 24px 32px;
+  --web-message-box-content-padding: 32px;
+  --web-message-box-footer-padding: 0 32px 32px;
+  --web-message-box-footer-button-space: 19px;
+
+  --web-radio-disabled-boder-color: var(--web-color-ccc);
+  --web-radio-circle-not-checked-border: 1px solid var(--web-color-ccc);
+  --web-radio-circle-not-checked-border-hover: 1px solid var(--web-color-primary);
+  --web-radio-circle-checked-disabled-border: 5px solid var(--web-color-ccc);
+  --web-radio-label-not-checked-color: #646464;
+
+  --web-table-header-bg: var(--web-color-f9f9f9);
+  --web-table-header-color: var(--web-color-86868b);
+  --web-table-header-height: 60px;
+  --web-table-line-height: 60px;
+
+  --web-pagination-total-font-size: 14px;
+  --web-pagination-pages-active-border: 1px solid var(--web-color-primary);
+  --web-pagination-pages-border: 1px solid var(--web-color-ccc);
+  --web-pagination-pages-border-radius: 4px;
+  --web-pagination-prev-next-disabled-color: var(--web-color-ccc);
+  --web-pagination-prev-next-disabled-bg: var(--web-color-f2f2f2);
+
+  --web-date-picker-input-height: 36px;
+
+  --web-input-focus-border-color: var(--web-color-primary);
+}
