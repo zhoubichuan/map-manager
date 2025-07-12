@@ -10,7 +10,7 @@
 import { nextTick, ref } from 'vue'
 import WebDialog from 'web-components/dialog/index'
 import WebFormCreate from 'web-components/form-create/index'
-import Map from '../page/index.vue'
+import Map from '../page/Index.vue'
 import dayjs from 'dayjs'
 const mapRef = ref()
 const mapGfid = ref('')

@@ -13,7 +13,7 @@ import WebDialog from 'web-components/dialog/index'
 import WebFormCreate from 'web-components/form-create/index'
 import type { FormData } from 'web-components/form-create/type'
 import { rules as modelRules } from './config/form.config'
-import Map from '../page/index.vue'
+import Map from '../page/Index.vue'
 import dayjs from 'dayjs'
 const mapRef = ref<InstanceType<typeof Map>>()
 const baseFormData = ref<FormData[]>([])
