@@ -1,6 +1,5 @@
 <template>
   <div class="table-page">
-    {{tableRef?.ids}}
     <!-- 搜索部分 -->
     <form-search class="search-part" @create="viewCreate?.handleCreate" @search="tableRef?.reloadData"
       @batchDel="tableRef?.handleDel" @batchView="viewRef?.batchView" :ids="tableRef?.ids"/>
